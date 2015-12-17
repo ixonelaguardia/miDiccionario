@@ -1,8 +1,8 @@
 //
 //  ViewController.swift
-//  miDiccionario
+//  DiccionarioAPP
 //
-//  Created by  on 10/12/15.
+//  Created by  on 17/12/15.
 //  Copyright © 2015 Egibide. All rights reserved.
 //
 

@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="CXH-fZ-ce0">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <scenes>
+        <!--Listado-->
+        <scene sceneID="yxQ-tY-Jum">
+            <objects>
+                <tableViewController id="lrX-Za-OfM" customClass="Listado" customModule="DiccionarioAPP" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="EBV-Pf-l53">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="reuseIdentifier" id="01K-QP-Vj9">
+                                <rect key="frame" x="0.0" y="92" width="600" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="01K-QP-Vj9" id="z32-Bw-NEJ">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <animations/>
+                                </tableViewCellContentView>
+                                <animations/>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="lrX-Za-OfM" id="18C-bJ-8Sf"/>
+                            <outlet property="delegate" destination="lrX-Za-OfM" id="4Pg-X9-9gH"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Listado" id="DBc-Qv-nt3">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="PEn-E1-5X0">
+                            <connections>
+                                <segue destination="jvn-vB-gpX" kind="show" id="qLQ-si-qDI"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="V6C-IU-qQw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="rfW-Hf-k08" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="1157" y="389"/>
+        </scene>
+        <!--Añadir palabra-->
+        <scene sceneID="Ct4-LO-gs3">
+            <objects>
+                <viewController id="jvn-vB-gpX" customClass="NuevaPalabraViewController" customModule="DiccionarioAPP" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="qxp-UI-kDE"/>
+                        <viewControllerLayoutGuide type="bottom" id="CFY-B6-lZQ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="K3D-lV-auI">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" alignment="bottom" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="6iN-Q3-5rc">
+                                <rect key="frame" x="220" y="224" width="86" height="152"/>
+                                <subviews>
+                                    <stackView autoresizesSubviews="NO" opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="fTn-x0-Afe">
+                                        <rect key="frame" x="0.0" y="0.0" width="86" height="51"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Palabra" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7nz-Ul-38J">
+                                                <rect key="frame" x="14" y="0.0" width="58" height="21"/>
+                                                <animations/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sri-mm-6wM" userLabel="cuadroTextoPalabra">
+                                                <rect key="frame" x="0.0" y="21" width="86" height="30"/>
+                                                <animations/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                        </subviews>
+                                        <animations/>
+                                        <constraints>
+                                            <constraint firstItem="sri-mm-6wM" firstAttribute="leading" secondItem="fTn-x0-Afe" secondAttribute="leading" id="gCz-sb-7XN"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="FIV-YU-Ezo">
+                                        <rect key="frame" x="0.0" y="101" width="86" height="51"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Traducción" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UF2-VU-M8X">
+                                                <rect key="frame" x="0.0" y="0.0" width="86" height="21"/>
+                                                <animations/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bZL-dq-I9x">
+                                                <rect key="frame" x="0.0" y="21" width="86" height="30"/>
+                                                <animations/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                        </subviews>
+                                        <animations/>
+                                    </stackView>
+                                </subviews>
+                                <animations/>
+                                <rect key="contentStretch" x="0.0" y="0.0" width="0.0" height="1"/>
+                                <constraints>
+                                    <constraint firstItem="FIV-YU-Ezo" firstAttribute="leading" secondItem="6iN-Q3-5rc" secondAttribute="leading" id="60y-bG-ww6"/>
+                                    <constraint firstItem="fTn-x0-Afe" firstAttribute="leading" secondItem="6iN-Q3-5rc" secondAttribute="leading" id="vOa-fU-q2N"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="6iN-Q3-5rc" firstAttribute="centerY" secondItem="K3D-lV-auI" secondAttribute="centerY" id="8Pe-nA-eXq"/>
+                            <constraint firstItem="6iN-Q3-5rc" firstAttribute="centerX" secondItem="K3D-lV-auI" secondAttribute="centerX" id="thm-qf-LYy"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Añadir palabra" id="ozv-hx-Q6j">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="Ikc-9A-ygi">
+                            <connections>
+                                <segue destination="rfW-Hf-k08" kind="unwind" identifier="cancelar" unwindAction="cancel:" id="6oP-kh-7Tg"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="e0T-q6-uSE">
+                            <connections>
+                                <segue destination="rfW-Hf-k08" kind="unwind" identifier="hecho" unwindAction="done:" id="GZv-Bs-4Qh"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="textoPalabra" destination="sri-mm-6wM" id="7X7-Cb-4kU"/>
+                        <outlet property="textoTraduccion" destination="bZL-dq-I9x" id="Ee2-V4-2aS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QpD-gG-e3Y" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1133" y="1107"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="1ri-2k-g7k">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="CXH-fZ-ce0" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Hde-GO-mGp">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="lrX-Za-OfM" kind="relationship" relationship="rootViewController" id="JuF-8P-mfR"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GZD-GD-Y6V" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="345" y="389"/>
+        </scene>
+    </scenes>
+</document>
