@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="CXH-fZ-ce0">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="M3P-6V-LXn">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
     </dependencies>
     <scenes>
         <!--Listado-->
@@ -12,7 +12,6 @@
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="EBV-Pf-l53">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="reuseIdentifier" id="01K-QP-Vj9">
@@ -21,9 +20,7 @@
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="01K-QP-Vj9" id="z32-Bw-NEJ">
                                     <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
-                                    <animations/>
                                 </tableViewCellContentView>
-                                <animations/>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -43,6 +40,57 @@
                 <exit id="rfW-Hf-k08" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1157" y="389"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="HXg-rn-daW">
+            <objects>
+                <viewController id="Ghs-mT-WW5" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="HqM-Gf-M9V"/>
+                        <viewControllerLayoutGuide type="bottom" id="Qj6-yG-tnI"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Yq6-jy-PDx">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="VNB-8K-LEY">
+                                <rect key="frame" x="287" y="223" width="55" height="90"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8KW-zj-hVB">
+                                        <rect key="frame" x="0.0" y="0.0" width="55" height="30"/>
+                                        <state key="normal" title="English"/>
+                                        <connections>
+                                            <segue destination="lrX-Za-OfM" kind="show" id="MNY-C6-S40"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tgm-og-gxR">
+                                        <rect key="frame" x="0.0" y="30" width="55" height="30"/>
+                                        <state key="normal" title="Euskera"/>
+                                        <connections>
+                                            <segue destination="lrX-Za-OfM" kind="show" id="Lz4-R5-hak"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dIT-2e-Ayg">
+                                        <rect key="frame" x="0.0" y="60" width="55" height="30"/>
+                                        <state key="normal" title="Deuch"/>
+                                        <connections>
+                                            <segue destination="lrX-Za-OfM" kind="show" id="qUm-4R-lx4"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="VNB-8K-LEY" firstAttribute="centerY" secondItem="Yq6-jy-PDx" secondAttribute="centerY" id="Nku-mU-1RF"/>
+                            <constraint firstItem="VNB-8K-LEY" firstAttribute="centerX" secondItem="Yq6-jy-PDx" secondAttribute="centerX" id="dkK-X2-eII"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="VFG-ie-4zh"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rGo-sw-o5u" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="386" y="591"/>
         </scene>
         <!--Añadir palabra-->
         <scene sceneID="Ct4-LO-gs3">
@@ -64,19 +112,16 @@
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Palabra" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7nz-Ul-38J">
                                                 <rect key="frame" x="14" y="0.0" width="58" height="21"/>
-                                                <animations/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sri-mm-6wM" userLabel="cuadroTextoPalabra">
                                                 <rect key="frame" x="0.0" y="21" width="86" height="30"/>
-                                                <animations/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                         </subviews>
-                                        <animations/>
                                         <constraints>
                                             <constraint firstItem="sri-mm-6wM" firstAttribute="leading" secondItem="fTn-x0-Afe" secondAttribute="leading" id="gCz-sb-7XN"/>
                                         </constraints>
@@ -86,22 +131,18 @@
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Traducción" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UF2-VU-M8X">
                                                 <rect key="frame" x="0.0" y="0.0" width="86" height="21"/>
-                                                <animations/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bZL-dq-I9x">
                                                 <rect key="frame" x="0.0" y="21" width="86" height="30"/>
-                                                <animations/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                         </subviews>
-                                        <animations/>
                                     </stackView>
                                 </subviews>
-                                <animations/>
                                 <rect key="contentStretch" x="0.0" y="0.0" width="0.0" height="1"/>
                                 <constraints>
                                     <constraint firstItem="FIV-YU-Ezo" firstAttribute="leading" secondItem="6iN-Q3-5rc" secondAttribute="leading" id="60y-bG-ww6"/>
@@ -109,7 +150,6 @@
                                 </constraints>
                             </stackView>
                         </subviews>
-                        <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="6iN-Q3-5rc" firstAttribute="centerY" secondItem="K3D-lV-auI" secondAttribute="centerY" id="8Pe-nA-eXq"/>
@@ -135,26 +175,28 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QpD-gG-e3Y" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1133" y="1107"/>
+            <point key="canvasLocation" x="1945" y="1107"/>
         </scene>
         <!--Navigation Controller-->
-        <scene sceneID="1ri-2k-g7k">
+        <scene sceneID="mpC-68-bq0">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="CXH-fZ-ce0" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="M3P-6V-LXn" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Hde-GO-mGp">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="lrs-r9-cI9">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <animations/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="lrX-Za-OfM" kind="relationship" relationship="rootViewController" id="JuF-8P-mfR"/>
+                        <segue destination="Ghs-mT-WW5" kind="relationship" relationship="rootViewController" id="hZ4-4x-18N"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="GZD-GD-Y6V" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2MZ-hV-PtQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="345" y="389"/>
+            <point key="canvasLocation" x="322" y="1340"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="qUm-4R-lx4"/>
+    </inferredMetricsTieBreakers>
 </document>

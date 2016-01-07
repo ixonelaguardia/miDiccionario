@@ -8,6 +8,9 @@
 
 import UIKit
 var listaPalabras = diccionario()
+var nuevaPalabra = ""
+var nuevaTraduccion = ""
+
 class Listado: UITableViewController {
 
     override func viewDidLoad() {
@@ -42,7 +45,12 @@ class Listado: UITableViewController {
     }
     
     @IBAction func done(segue:UIStoryboardSegue) {
+        var nuevaPalabraVC = segue.sourceViewController as! NuevaPalabraViewController
+        nuevaPalabra = nuevaPalabraVC.textoPalabra.text!
+        nuevaTraduccion=nuevaPalabraVC.textoTraduccion.text!
         
+        listaPalabras.anadirPalabra(nuevaPalabra, b: nuevaTraduccion)
+        tableView.reloadData()
     }
  
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
@@ -55,6 +63,7 @@ class Listado: UITableViewController {
 
         return cell
     }
+    
     
 
     /*

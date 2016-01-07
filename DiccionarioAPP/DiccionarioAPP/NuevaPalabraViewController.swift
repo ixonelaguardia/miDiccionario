@@ -33,10 +33,13 @@ var palabra=""
 
         if segue.identifier=="hecho"{
         
-        palabra=textoPalabra.text
-            traduccion=textoTraduccion.text
+        palabra=textoPalabra.text!
+            traduccion=textoTraduccion.text!
         }
     }
 
 
+
+    
+    
 }

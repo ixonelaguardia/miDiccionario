@@ -13,6 +13,7 @@ class diccionario{
 
 
 var ingles = [("cat","gato"),("dog","perro")]
+var euskera = [("katua", "gato"),("txakurra","perro")]
     
     
     func mostrarPalabra(i:Int) -> String{
@@ -25,6 +26,5 @@ var ingles = [("cat","gato"),("dog","perro")]
     func anadirPalabra(a: String, b: String){
         ingles.append(a,b)
     }
-
 
 }
