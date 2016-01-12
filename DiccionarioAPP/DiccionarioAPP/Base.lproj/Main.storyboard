@@ -41,10 +41,10 @@
             </objects>
             <point key="canvasLocation" x="1157" y="389"/>
         </scene>
-        <!--View Controller-->
+        <!--Listado Idiomas View Controller-->
         <scene sceneID="HXg-rn-daW">
             <objects>
-                <viewController id="Ghs-mT-WW5" sceneMemberID="viewController">
+                <viewController id="Ghs-mT-WW5" customClass="ListadoIdiomasViewController" customModule="DiccionarioAPP" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="HqM-Gf-M9V"/>
                         <viewControllerLayoutGuide type="bottom" id="Qj6-yG-tnI"/>
@@ -54,13 +54,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="VNB-8K-LEY">
-                                <rect key="frame" x="287" y="223" width="55" height="90"/>
+                                <rect key="frame" x="287" y="223" width="55" height="120"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8KW-zj-hVB">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8KW-zj-hVB" userLabel="Ingles">
                                         <rect key="frame" x="0.0" y="0.0" width="55" height="30"/>
+                                        <accessibility key="accessibilityConfiguration" identifier="bot1"/>
                                         <state key="normal" title="English"/>
                                         <connections>
-                                            <segue destination="lrX-Za-OfM" kind="show" id="MNY-C6-S40"/>
+                                            <segue destination="lrX-Za-OfM" kind="show" identifier="pulsadoBoton1" id="MNY-C6-S40"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tgm-og-gxR">
@@ -77,6 +78,10 @@
                                             <segue destination="lrX-Za-OfM" kind="show" id="qUm-4R-lx4"/>
                                         </connections>
                                     </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N8M-fV-xg3">
+                                        <rect key="frame" x="0.0" y="90" width="55" height="30"/>
+                                        <state key="normal" title="Button"/>
+                                    </button>
                                 </subviews>
                             </stackView>
                         </subviews>
@@ -87,6 +92,12 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="VFG-ie-4zh"/>
+                    <connections>
+                        <outlet property="boton1" destination="8KW-zj-hVB" id="Xt2-ep-c1C"/>
+                        <outlet property="boton2" destination="Tgm-og-gxR" id="4Zs-9J-Ndb"/>
+                        <outlet property="boton3" destination="dIT-2e-Ayg" id="ung-bV-1hd"/>
+                        <outlet property="boton4" destination="N8M-fV-xg3" id="3qO-IY-PtC"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rGo-sw-o5u" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -113,7 +124,7 @@
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Palabra" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7nz-Ul-38J">
                                                 <rect key="frame" x="14" y="0.0" width="58" height="21"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sri-mm-6wM" userLabel="cuadroTextoPalabra">
@@ -132,7 +143,7 @@
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Traducción" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UF2-VU-M8X">
                                                 <rect key="frame" x="0.0" y="0.0" width="86" height="21"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bZL-dq-I9x">
@@ -197,6 +208,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="qUm-4R-lx4"/>
+        <segue reference="MNY-C6-S40"/>
     </inferredMetricsTieBreakers>
 </document>

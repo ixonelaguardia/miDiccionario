@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5F4C63B51C4572A6005309F1 /* ListadoIdiomasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F4C63B41C4572A6005309F1 /* ListadoIdiomasViewController.swift */; };
 		5F8985691C23367B00DC129A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F8985681C23367B00DC129A /* AppDelegate.swift */; };
 		5F89856E1C23367B00DC129A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F89856C1C23367B00DC129A /* Main.storyboard */; };
 		5F8985701C23367B00DC129A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5F89856F1C23367B00DC129A /* Assets.xcassets */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5F4C63B41C4572A6005309F1 /* ListadoIdiomasViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListadoIdiomasViewController.swift; sourceTree = "<group>"; };
 		5F8985651C23367B00DC129A /* DiccionarioAPP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DiccionarioAPP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F8985681C23367B00DC129A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5F89856D1C23367B00DC129A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -66,6 +68,7 @@
 				5F89857A1C23389100DC129A /* ListadoTableViewControler.swift */,
 				5F89857C1C2339AB00DC129A /* NuevaPalabraViewController.swift */,
 				5F89857E1C2339DC00DC129A /* diccionario.swift */,
+				5F4C63B41C4572A6005309F1 /* ListadoIdiomasViewController.swift */,
 			);
 			path = DiccionarioAPP;
 			sourceTree = "<group>";
@@ -142,6 +145,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5F89857F1C2339DC00DC129A /* diccionario.swift in Sources */,
+				5F4C63B51C4572A6005309F1 /* ListadoIdiomasViewController.swift in Sources */,
 				5F89857D1C2339AB00DC129A /* NuevaPalabraViewController.swift in Sources */,
 				5F89857B1C23389100DC129A /* ListadoTableViewControler.swift in Sources */,
 				5F8985691C23367B00DC129A /* AppDelegate.swift in Sources */,
@@ -292,6 +296,7 @@
 				5F8985791C23367B00DC129A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
