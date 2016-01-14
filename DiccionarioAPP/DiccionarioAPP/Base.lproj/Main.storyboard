@@ -5,6 +5,51 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
     </dependencies>
     <scenes>
+        <!--Nuevo Idioma-->
+        <scene sceneID="TE5-3c-Y2R">
+            <objects>
+                <viewController title="Nuevo Idioma" id="GKc-Qs-iTG" customClass="NuevoIdiomaViewController" customModule="DiccionarioAPP" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Tuj-kr-jTq"/>
+                        <viewControllerLayoutGuide type="bottom" id="U0i-jK-mJo"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="BWF-kr-vun">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kgL-uN-Bjw">
+                                <rect key="frame" x="252" y="265" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="kgL-uN-Bjw" firstAttribute="centerY" secondItem="BWF-kr-vun" secondAttribute="centerY" id="Qt9-52-FRG"/>
+                            <constraint firstItem="kgL-uN-Bjw" firstAttribute="centerX" secondItem="BWF-kr-vun" secondAttribute="centerX" id="y6p-nr-bM9"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Title" id="qMX-an-gqc">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="mWJ-lv-OYv">
+                            <connections>
+                                <segue destination="idQ-dK-9Us" kind="unwind" identifier="segueCancelar" unwindAction="carcelar:" id="Tyw-nd-Kij"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="a55-W9-N68">
+                            <connections>
+                                <segue destination="idQ-dK-9Us" kind="unwind" identifier="segueHecho" unwindAction="hecho:" id="K0O-m6-xJL"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="cuadroTexto" destination="kgL-uN-Bjw" id="qDV-MP-O1r"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sYq-qT-wPr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="idQ-dK-9Us" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="451" y="103"/>
+        </scene>
         <!--Listado-->
         <scene sceneID="yxQ-tY-Jum">
             <objects>
@@ -56,31 +101,35 @@
                             <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="VNB-8K-LEY">
                                 <rect key="frame" x="287" y="223" width="55" height="120"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8KW-zj-hVB" userLabel="Ingles">
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8KW-zj-hVB" userLabel="Ingles">
                                         <rect key="frame" x="0.0" y="0.0" width="55" height="30"/>
                                         <accessibility key="accessibilityConfiguration" identifier="bot1"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
                                         <state key="normal" title="English"/>
                                         <connections>
-                                            <segue destination="lrX-Za-OfM" kind="show" identifier="pulsadoBoton1" id="MNY-C6-S40"/>
+                                            <segue destination="lrX-Za-OfM" kind="show" identifier="segueIdioma1" id="MNY-C6-S40"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tgm-og-gxR">
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tgm-og-gxR">
                                         <rect key="frame" x="0.0" y="30" width="55" height="30"/>
                                         <state key="normal" title="Euskera"/>
                                         <connections>
-                                            <segue destination="lrX-Za-OfM" kind="show" id="Lz4-R5-hak"/>
+                                            <segue destination="lrX-Za-OfM" kind="show" identifier="segueIdioma2" id="Lz4-R5-hak"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dIT-2e-Ayg">
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dIT-2e-Ayg">
                                         <rect key="frame" x="0.0" y="60" width="55" height="30"/>
                                         <state key="normal" title="Deuch"/>
                                         <connections>
-                                            <segue destination="lrX-Za-OfM" kind="show" id="qUm-4R-lx4"/>
+                                            <segue destination="lrX-Za-OfM" kind="show" identifier="segueIdioma3" id="qUm-4R-lx4"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N8M-fV-xg3">
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N8M-fV-xg3">
                                         <rect key="frame" x="0.0" y="90" width="55" height="30"/>
                                         <state key="normal" title="Button"/>
+                                        <connections>
+                                            <segue destination="lrX-Za-OfM" kind="show" identifier="segueIdioma4" id="an2-hO-FsC"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -91,7 +140,13 @@
                             <constraint firstItem="VNB-8K-LEY" firstAttribute="centerX" secondItem="Yq6-jy-PDx" secondAttribute="centerX" id="dkK-X2-eII"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="VFG-ie-4zh"/>
+                    <navigationItem key="navigationItem" id="VFG-ie-4zh">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="ptX-Qv-Bht">
+                            <connections>
+                                <segue destination="GKc-Qs-iTG" kind="show" id="WUX-lN-jms"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="boton1" destination="8KW-zj-hVB" id="Xt2-ep-c1C"/>
                         <outlet property="boton2" destination="Tgm-og-gxR" id="4Zs-9J-Ndb"/>
@@ -101,7 +156,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rGo-sw-o5u" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="386" y="591"/>
+            <point key="canvasLocation" x="358" y="1003"/>
         </scene>
         <!--Añadir palabra-->
         <scene sceneID="Ct4-LO-gs3">
@@ -204,7 +259,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2MZ-hV-PtQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="322" y="1340"/>
+            <point key="canvasLocation" x="334" y="1730"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>

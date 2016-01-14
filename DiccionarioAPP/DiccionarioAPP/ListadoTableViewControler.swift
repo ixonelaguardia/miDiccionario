@@ -8,13 +8,15 @@
 
 import UIKit
 
-var listaPalabras = diccionario()
-var nuevaPalabra = ""
-var nuevaTraduccion = ""
-//var indiceIdioma=2
+
 
 class Listado: UITableViewController {
-
+    
+   var listaPalabras =  diccionario()
+    var nuevaPalabra = ""
+    var nuevaTraduccion = ""
+    var indiceIdioma=5
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -39,7 +41,7 @@ class Listado: UITableViewController {
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return listaPalabras.diccionario[2].count
+        return listaPalabras.diccionario[indiceIdioma].count
         
     }
     @IBAction func cancel(segue:UIStoryboardSegue) {
@@ -51,7 +53,7 @@ class Listado: UITableViewController {
         nuevaPalabra = nuevaPalabraVC.textoPalabra.text!
         nuevaTraduccion=nuevaPalabraVC.textoTraduccion.text!
         
-        listaPalabras.anadirPalabra(nuevaPalabra, b: nuevaTraduccion,i:2)
+        listaPalabras.anadirPalabra(nuevaPalabra, b: nuevaTraduccion,i:indiceIdioma)
         tableView.reloadData()
     }
  
@@ -61,7 +63,7 @@ class Listado: UITableViewController {
         // Configure the cell...
         
        // cell.textLabel!.text=listaCompra.mostrarArticulo(indexPath.row)
-        cell.textLabel!.text=listaPalabras.mostrarPalabra(indexPath.row,j:2)
+        cell.textLabel!.text=listaPalabras.mostrarPalabra(indexPath.row,j:indiceIdioma)
 
         return cell
     }
