@@ -35,50 +35,38 @@ class ListadoIdiomasViewController: UIViewController {
     
    @IBAction func hecho(segue:UIStoryboardSegue) {
         let nuevoIdiomaVC = segue.sourceViewController as! NuevoIdiomaViewController
-    // var vacio = false
-        
+    
+
   
         for i in 0...3{
             if idiomas[i]==""{
                 idiomas[i] = nuevoIdiomaVC.nombreIdioma
-               // vacio = true
                 break
             }
-            //if vacio == true{
-               // break
-            //}
-        }
-    
-    
-    
-    
-    
-    
+       }
 
-           /* var i = 0
-        
-        while i < 4 && idiomas[i] != ""{
-            i++;
-        }
-        
-        if i<4 {
-            idiomas[i] = nuevoIdiomaVC.nombreIdioma
-            
-       
-        switch (i){
-        case 0:
-           
-            boton1.setTitle(idiomas[i], forState: .Normal)
-        case 1:
-              boton2.titleLabel = idiomas[i]
-        case 2:
-              boton3.titleLabel=idiomas[i]
-        case 3:
-              boton4.titleLabel=idiomas[i]
-      default:
-           boton1.setTitle(idiomas[i], forState: .Normal)
-        }*/
-         }
+               if boton1.titleLabel!.text==nil{
+                    boton1.setTitle(idiomas[0], forState: .Normal)
+                    boton1.enabled=true
+                  
+                }else{
+                    if boton2.titleLabel!.text==nil{
+                            boton2.setTitle(idiomas[1], forState: .Normal)
+                            boton2.enabled=true
+                    }else{
+                        if boton3.titleLabel!.text==nil{
+                                boton3.setTitle(idiomas[2], forState: .Normal)
+                                boton3.enabled=true
+                        }else {
+                                if boton4.titleLabel!.text==nil{
+                                    boton4.setTitle(idiomas[3], forState: .Normal)
+                                    boton4.enabled=true
+                            }
+                        }
+                }
+    }
+
+    }
     
 
     var idioma=5;

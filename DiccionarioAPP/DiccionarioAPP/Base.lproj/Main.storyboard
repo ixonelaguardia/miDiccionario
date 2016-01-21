@@ -103,34 +103,30 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="VNB-8K-LEY">
-                                <rect key="frame" x="287" y="223" width="55" height="120"/>
+                                <rect key="frame" x="287" y="223" width="30" height="120"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8KW-zj-hVB" userLabel="Ingles">
-                                        <rect key="frame" x="0.0" y="0.0" width="55" height="30"/>
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8KW-zj-hVB" userLabel="Ingles">
+                                        <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
                                         <accessibility key="accessibilityConfiguration" identifier="bot1"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
-                                        <state key="normal" title="English"/>
                                         <connections>
                                             <segue destination="lrX-Za-OfM" kind="show" identifier="segueIdioma1" id="MNY-C6-S40"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tgm-og-gxR">
-                                        <rect key="frame" x="0.0" y="30" width="55" height="30"/>
-                                        <state key="normal" title="Euskera"/>
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tgm-og-gxR">
+                                        <rect key="frame" x="0.0" y="30" width="30" height="30"/>
                                         <connections>
                                             <segue destination="lrX-Za-OfM" kind="show" identifier="segueIdioma2" id="Lz4-R5-hak"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dIT-2e-Ayg">
-                                        <rect key="frame" x="0.0" y="60" width="55" height="30"/>
-                                        <state key="normal" title="Deuch"/>
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dIT-2e-Ayg">
+                                        <rect key="frame" x="0.0" y="60" width="30" height="30"/>
                                         <connections>
                                             <segue destination="lrX-Za-OfM" kind="show" identifier="segueIdioma3" id="qUm-4R-lx4"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N8M-fV-xg3">
-                                        <rect key="frame" x="0.0" y="90" width="55" height="30"/>
-                                        <state key="normal" title="Button"/>
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N8M-fV-xg3">
+                                        <rect key="frame" x="0.0" y="90" width="30" height="30"/>
                                         <connections>
                                             <segue destination="lrX-Za-OfM" kind="show" identifier="segueIdioma4" id="an2-hO-FsC"/>
                                         </connections>
