@@ -6,6 +6,7 @@
 //  Copyright © 2016 Egibide. All rights reserved.
 //
 
+
 import UIKit
 
 class ListadoIdiomasViewController: UIViewController {
@@ -32,22 +33,29 @@ class ListadoIdiomasViewController: UIViewController {
         
     }
     
-/*    @IBAction func hecho(segue:UIStoryboardSegue) {
+   @IBAction func hecho(segue:UIStoryboardSegue) {
         let nuevoIdiomaVC = segue.sourceViewController as! NuevoIdiomaViewController
-  /*      var vacio = false
+    // var vacio = false
         
-        
+  
         for i in 0...3{
             if idiomas[i]==""{
                 idiomas[i] = nuevoIdiomaVC.nombreIdioma
-                vacio = true
-            }
-            if vacio == true{
+               // vacio = true
                 break
             }
+            //if vacio == true{
+               // break
+            //}
         }
-        */
-        var i = 0
+    
+    
+    
+    
+    
+    
+
+           /* var i = 0
         
         while i < 4 && idiomas[i] != ""{
             i++;
@@ -61,17 +69,17 @@ class ListadoIdiomasViewController: UIViewController {
         case 0:
            
             boton1.setTitle(idiomas[i], forState: .Normal)
-      /*  case 1:
+        case 1:
               boton2.titleLabel = idiomas[i]
         case 2:
               boton3.titleLabel=idiomas[i]
         case 3:
-              boton4.titleLabel=idiomas[i]*/
+              boton4.titleLabel=idiomas[i]
       default:
            boton1.setTitle(idiomas[i], forState: .Normal)
-        }
+        }*/
          }
-    }
+    
 
     var idioma=5;
     // MARK: - Navigation
@@ -94,5 +102,5 @@ class ListadoIdiomasViewController: UIViewController {
 
         
 
-    }*/
+
 }

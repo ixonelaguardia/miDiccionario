@@ -16,6 +16,7 @@
 		5F89857B1C23389100DC129A /* ListadoTableViewControler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F89857A1C23389100DC129A /* ListadoTableViewControler.swift */; };
 		5F89857D1C2339AB00DC129A /* NuevaPalabraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F89857C1C2339AB00DC129A /* NuevaPalabraViewController.swift */; };
 		5F89857F1C2339DC00DC129A /* diccionario.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F89857E1C2339DC00DC129A /* diccionario.swift */; };
+		5FE109861C516058003E6CBC /* Almacen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FE109851C516058003E6CBC /* Almacen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		5F89857A1C23389100DC129A /* ListadoTableViewControler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListadoTableViewControler.swift; sourceTree = "<group>"; };
 		5F89857C1C2339AB00DC129A /* NuevaPalabraViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NuevaPalabraViewController.swift; sourceTree = "<group>"; };
 		5F89857E1C2339DC00DC129A /* diccionario.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = diccionario.swift; sourceTree = "<group>"; };
+		5FE109851C516058003E6CBC /* Almacen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Almacen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +74,7 @@
 				5F89857E1C2339DC00DC129A /* diccionario.swift */,
 				5F4C63B41C4572A6005309F1 /* ListadoIdiomasViewController.swift */,
 				5F1E981C1C483389003F9EDF /* NuevoIdiomaViewController.swift */,
+				5FE109851C516058003E6CBC /* Almacen.swift */,
 			);
 			path = DiccionarioAPP;
 			sourceTree = "<group>";
@@ -151,6 +154,7 @@
 				5F4C63B51C4572A6005309F1 /* ListadoIdiomasViewController.swift in Sources */,
 				5F89857D1C2339AB00DC129A /* NuevaPalabraViewController.swift in Sources */,
 				5F89857B1C23389100DC129A /* ListadoTableViewControler.swift in Sources */,
+				5FE109861C516058003E6CBC /* Almacen.swift in Sources */,
 				5F8985691C23367B00DC129A /* AppDelegate.swift in Sources */,
 				5F1E981D1C483389003F9EDF /* NuevoIdiomaViewController.swift in Sources */,
 			);

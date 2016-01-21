@@ -18,14 +18,18 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kgL-uN-Bjw">
-                                <rect key="frame" x="252" y="265" width="97" height="30"/>
+                                <rect key="frame" x="182" y="265" width="237" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="237" id="4SO-I6-nIk"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="kgL-uN-Bjw" firstAttribute="centerY" secondItem="BWF-kr-vun" secondAttribute="centerY" id="Qt9-52-FRG"/>
+                            <constraint firstItem="kgL-uN-Bjw" firstAttribute="centerY" secondItem="BWF-kr-vun" secondAttribute="centerY" id="tvI-ed-YId"/>
                             <constraint firstItem="kgL-uN-Bjw" firstAttribute="centerX" secondItem="BWF-kr-vun" secondAttribute="centerX" id="y6p-nr-bM9"/>
                         </constraints>
                     </view>
@@ -101,7 +105,7 @@
                             <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="VNB-8K-LEY">
                                 <rect key="frame" x="287" y="223" width="55" height="120"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8KW-zj-hVB" userLabel="Ingles">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8KW-zj-hVB" userLabel="Ingles">
                                         <rect key="frame" x="0.0" y="0.0" width="55" height="30"/>
                                         <accessibility key="accessibilityConfiguration" identifier="bot1"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
@@ -110,21 +114,21 @@
                                             <segue destination="lrX-Za-OfM" kind="show" identifier="segueIdioma1" id="MNY-C6-S40"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tgm-og-gxR">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tgm-og-gxR">
                                         <rect key="frame" x="0.0" y="30" width="55" height="30"/>
                                         <state key="normal" title="Euskera"/>
                                         <connections>
                                             <segue destination="lrX-Za-OfM" kind="show" identifier="segueIdioma2" id="Lz4-R5-hak"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dIT-2e-Ayg">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dIT-2e-Ayg">
                                         <rect key="frame" x="0.0" y="60" width="55" height="30"/>
                                         <state key="normal" title="Deuch"/>
                                         <connections>
                                             <segue destination="lrX-Za-OfM" kind="show" identifier="segueIdioma3" id="qUm-4R-lx4"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N8M-fV-xg3">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N8M-fV-xg3">
                                         <rect key="frame" x="0.0" y="90" width="55" height="30"/>
                                         <state key="normal" title="Button"/>
                                         <connections>
