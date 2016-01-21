@@ -27,15 +27,18 @@ class Almacen {
     }
     
     
-    var diccionario = [[("cat","gato"),("dog","perro")],
-        [("katua", "gato"),("txakurra","perro")],
+    var diccionario = [[("","")],
+        [],
         [],
         []]
     
     func mostrarPalabra(i:Int, j:Int) -> String{
-        return diccionario[j][i].0 + ": " + diccionario[j][i].1
+        if diccionario[j][i].0==""{
+            return ""
+        }else{
+            return diccionario[j][i].0 + ": " + diccionario[j][i].1
+        }
     }
-    
     func anadirPalabra(a: String, b:String, i: Int){
         diccionario[i].append(a,b)
     }

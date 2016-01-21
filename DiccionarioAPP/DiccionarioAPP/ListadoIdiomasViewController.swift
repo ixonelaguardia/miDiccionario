@@ -78,12 +78,16 @@ class ListadoIdiomasViewController: UIViewController {
         if let destino = segue.destinationViewController as? Listado {
             if segue.identifier=="segueIdioma1"{
                 destino.indiceIdioma=0
+                destino.titulo=boton1.titleLabel!.text!
               } else if segue.identifier=="segueIdioma2"{
                  destino.indiceIdioma=1
+                 destino.titulo=boton2.titleLabel!.text!
             } else if segue.identifier=="segueIdioma3"{
                 destino.indiceIdioma=2
+                 destino.titulo=boton3.titleLabel!.text!
             } else if segue.identifier=="segueIdioma4"{
                 destino.indiceIdioma=3
+                 destino.titulo=boton4.titleLabel!.text!
             }
             }
         }

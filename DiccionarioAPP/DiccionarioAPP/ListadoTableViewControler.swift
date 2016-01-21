@@ -12,6 +12,10 @@ import UIKit
 
 class Listado: UITableViewController {
     
+    var titulo = ""
+    
+    @IBOutlet weak var tituloIdioma: UINavigationItem!
+
  //   var listaPalabras =  diccionario()
     var nuevaPalabra = ""
     var nuevaTraduccion = ""
@@ -21,7 +25,7 @@ class Listado: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+self.title=titulo
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
